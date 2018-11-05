@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+
+
+<html>
+	
+	<head>
+  		<meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="customstyle.css"/>
+      <link rel="stylesheet" href="css/foundation.css" />
+      <link rel="stylesheet" href="css/normalize.css" />
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+      <script src="js/vendor/modernizr.js"></script>
+     <!--  <script src="js/vendor/jquery.js"></script>
+      <script src="js/foundation.min.js"></script> -->
+	</head>
+
+	<body>
+       <div id="my-modal" class="reveal-modal boxsize" data-reveal >
+            <center>
+            <form data-abide class="content">
+                 <h3>Sigin</h3>
+				  <div class="name-field ">
+				    
+				    <input class="inputsize" type="text" placeholder="Name" required pattern="[a-zA-Z]+">
+				    
+				    <small class="error">Name is required and must be a string.</small>
+				  </div>
+				  <div class="email-field">
+				    
+				    <input class="inputsize" type="email" placeholder="Email" required>
+				    
+				    <small class="error">An email address is required.</small>
+				  </div>
+				  <div class="password-field">
+				    
+				    <input class="inputsize" type="password" placeholder="Password" required>
+				    
+				    <small class="error">Password should have minimum 8 characters.</small>
+				  </div>
+				   
+				  <button type="submit" class="btnimpl">Create account</button>
+			</form>
+			<a class="close-reveal-modal"  style="top:5px !important;align-items: right" aria-label="Close">&#215;</a>
+		  </center>	
+                  
+    </div>
+       
+		<div class="off-canvas-wrap show-for-medium-up">
+
+            <div class="row top-links" style="height: 7px">
+                <ul class="button-group  right" style="height: 33px">
+                    <li style="margin-top: 4.5px; color: #0a0a0a">
+                        <a href="tel:+91 9014324646" class=" header-call "><img src="header-mike.png" alt="headmike">+91 9014324646</a>
+                    </li>
+
+                    <li style="margin-top: 4px"><a href="mailto:wecare@customfurnish.com" class="header-mail">
+                       <img src="header-mail.png" alt="headmail"> wecare@customfurnish.com</a>
+                    </li>
+                    
+                        <li style="margin-top: 4px"><a href="/furniture-store/" class="header-store">
+                        <img src="header-store.png" alt="headstore">Store Locator</a>
+                    </li>
+
+                    <li>
+          
+                            <a  class="header-user" data-reveal-id="my-modal" data-tooltip aria-haspopup="true" title="Login" href="#" ><img src="header-user.png" alt="headuser">Sign in/ Sign up</a>
+
+                        
+                    </li>
+                    
+                </ul>
+         
+            </div>
+
+            <div class="row logo-section">
+                <div class="columns large-4 medium-4  headerSection">
+
+                    <a href="/" style="height:45px"><img src="https://d32e2cg1dqah35.cloudfront.net/static/images/miscellaneous/custom-furnish.png" alt="KustomMade"></a>
+                    <span id="user_name" style="display:none"></span>
+
+                    <p id="user_email" style="display: none"></p>
+                    <p id="user_roles" style="display: none"></p>
+
+
+                </div>
+                <div class="columns large-8 medium-8">
+
+                    <ul class="button-group  right">
+
+                        <li style="margin-left: -220px;margin-top: 6px;width: 200px;">
+                            <input  class="searchpro" style="background-image: url('https://d32e2cg1dqah35.cloudfront.net/static/img/search-find.png'); background-repeat: no-repeat;background-position: right;height: 30px;" type="search" placeholder="Search for Product" autocomplete="on" size="14">
+                        </li>
+                        <li>
+                    	<li style="margin-top: 4px"><a href="/furniture-store/" class="header-store" style="font-size: :  25px;">
+                        <img src="header-cart.png" alt="headstore">Cart(0)</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="hide-for-medium-up">
+
+       		<div class="off-canvas-wrap" data-offcanvas>
+  					<div class="inner-wrap">
+   							    <nav class="tab-bar">
+      									<section class="left-small">
+      										  <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+     									 </section>
+                                </nav>
+                                <aside class="left-off-canvas-menu">
+      										<ul class="off-canvas-list">
+        											<li><label>Complete Interior</label></li>
+        						        			<li><a href="#">Full House Interiors</a></li>
+        						        			<li><a href="#">Modular Kitchens</a></li>
+        						        			<li><a href="#">Wardrobes</a></li>
+        						        			<li><a href="#">Office Interiors</a></li>
+        						        			<li><a href="#">Design Service</a></li>
+      										</ul>
+  								  </aside>
+       				 </div>
+       		</div>
+       	</div>
+       	<section>			 
+        <div id="headerbar" class="show-for-medium-up animated fixed-header" style="border-bottom: 1px solid tomato;background-color: white;width: 100%">
+
+     		<div class="row">
+     			<nav class="top-bar  top-bar-nav " data-topbar role="navigation" >
+     				<!-- <ul style="width:70%">
+     					<li class="menu-list">
+     						<a class="navitem" href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:50">COMPLETE INTERIOR
+     						</a>
+							<ul id="hover1" class="f-dropdown" data-dropdown-content>
+  								<li><a href="#">This is a link</a></li>
+  								<li><a href="#">This is another</a></li>
+  								<li><a href="#">Yet another</a></li>
+							</ul>
+     					</li>
+     					
+     				</ul> -->
+     			<section class="top-bar-section">	
+     				 <ul class="left">
+      		            	<li>
+      							  <a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:100">COMPLETE INTERIOR</a>
+       							 <ul id="hover1" class="f-dropdown" data-dropdown-content>
+         							<li><a href="#">Full House Interiors</a></li>
+        						    <li><a href="#">Modular Kitchens</a></li>
+        						   	<li><a href="#">Wardrobes</a></li>
+        						    <li><a href="#">Office Interiors</a></li>
+        						    <li><a href="#">Design Service</a></li>
+         							
+        						</ul>
+      						</li>
+      						
+      						<!-- <li>
+      							  <a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">READYMADE FURNITURE</a>
+       							 <ul id="hover1" class="f-dropdown" data-dropdown-content>
+         							<li ><a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">Living Room</a>
+         								<ul id="hover1" class="f-dropdown" data-dropdown-content>
+         									<li><a href="#">Sofas</a></li>
+         									<li><a href="#">Coffee Tables</a></li>
+         									<li><a href="#">Book Shelves</a></li>
+         									<li><a href="#">Chest of Drawers</a></li>
+         									<li><a href="#">Wall Storage</a></li>
+         									<li><a href="#">TV Units</a></li>
+         									<li><a href="#">Console Units</a></li>
+                                        </ul>
+                                     </li>   
+        						    <li ><a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">BedRoom</a>
+        						    	<ul id="hover1" class="f-dropdown" data-dropdown-content>
+         									<li><a href="#">Beds</a></li>
+         									<li><a href="#">Chest of Drawers</a></li>
+         									<li><a href="#">Dresses</a></li>
+         									<li><a href="#">TV Units</a></li>
+         									<li><a href="#">Wardrobes</a></li>
+                                        </ul>
+                                     </li>   
+        						   	<li ><a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">Kitchen</a>
+        						   		<ul id="hover1" class="f-dropdown" data-dropdown-content>
+         									<li><a href="#">Modular Kitchens</a></li>
+         									<li><a href="#">Dining Tables</a></li>
+         									<li><a href="#">Bar Untis</a></li>
+         									<li><a href="#">Crocky Units</a></li>
+                                        </ul>
+                                     </li>   
+        						    <li ><a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">Others</a>
+        						    	<ul id="hover1" class="f-dropdown" data-dropdown-content>
+         									<li><a href="#">Pooja Unit</a></li>
+         									<li><a href="#">Study Tables</a></li>
+         									<li><a href="#">Shoe Rocks</a></li>
+         									<li><a href="#">Stools</a></li>
+                                        </ul>
+                                     </li>   
+        						     </li> 
+        						    
+         							
+        						</ul>
+      						</li> -->
+      						<li>
+      							<a href="#" data-dropdown="hover2" data-options="is_hover:true; hover_timeout:100">READYMADE FURNITURE</a>
+      							<ul id="hover2" class="f-dropdown "  data-dropdown-content>
+                                <div class="row">
+                                    <p><div class="small-3 columns" style="text-align: justify;">
+                                    <b style="color: black;padding-left: 10%">Living Room</b>
+                                    <li><a href="#">Coffee Tables</a></li>
+                                    <li><a href="#">Book Schelves</a></li>
+                                    <li><a href="#">Chest Of Drawers</a></li>
+                                    <li><a href="#">Wall Storage</a></li>
+                                    <li><a href="#">TV Units</a></li>
+                                    </div></p>
+                                    <div class="small-3 columns" style="text-align: justify;">
+                                    <b style="color: black;padding-left: 10%">BedRoom</b>
+                                    <li><a href="#">Coffee Tables</a></li>
+                                    <li><a href="#">Book Schelves</a></li>
+                                    <li><a href="#">Chest Of Drawers</a></li>
+                                    <li><a href="#">Wall Storage</a></li>
+                                    <li><a href="#">TV Units</a></li>
+                                    </div></p>
+                                    <p><div class="small-3 columns" style="text-align: justify;">
+                                        <b style="color: black;padding-left: 10%">Kitchen</b>
+                                    <li><a href="#">Coffee Tables</a></li>
+                                    <li><a href="#">Book Schelves</a></li>
+                                    <li><a href="#">Chest Of Drawers</a></li>
+                                    <li><a href="#">Wall Storage</a></li><!-- <div class="orbit-container"><ul class="orbit-container orbit-slides-container" data-orbit="" style="margin-top: 5px; height: 331px;">
+	 	 			<ul data-orbit class="example-orbit orbit-slides-container">
+          <li class="active" style="z-index: 4; margin-left: 0%;">
+    					<img src="curtains_banner.jpg" alt="slide 1">
+    		
+  	  				</li>
+ 		 			<li class="" style="z-index: 2; margin-left: 100%;">
+    					<img src="kitchen-home.jpg" alt="slide 2">
+    		
+  					</li>
+  					<li class="" style="z-index: 2; margin-left: 100%;">
+   			 			<img src="banner-sofa.jpg" alt="slide 3">
+    		
+  					</li>
+				</ul> --><!-- <a href="#" class="orbit-prev"><span></span></a><a href="#" class="orbit-next"><span></span></a><div class="orbit-timer paused"><span></span><div class="orbit-progress" style="width: 0%;"></div></div><div class="orbit-slide-number"><span>1</span> of <span>3</span></div><div class="orbit-bullets-container"><ol class="orbit-bullets"><li data-orbit-slide="0" class="active"></li><li data-orbit-slide="1" class=""></li><li data-orbit-slide="2" class=""></li></ol></div></div>li> -->
+                                    <li><a href="#">TV Units</a></li>
+                                    </div></p>
+                                    <p><div class="small-3 columns" style="text-align: justify;">
+                                        <b style="color: black;padding-left: 10%">Others</b>
+                                    <li><a href="#">Coffee Tables</a></li>
+                                    <li><a href="#">Book Schelves</a></li>
+                                    <li><a href="#">Chest Of Drawers</a></li>
+                                    <li><a href="#">Wall Storage</a></li>
+                                    <li><a href="#">TV Units</a></li>
+                                    </div></p>
+                                </div>
+                            </ul>
+      						</li>
+
+      						<li>
+      							  <a href="#" data-dropdown="hover3" data-options="is_hover:true; hover_timeout:100">CUSTOM FURNITURE</a>
+       							 <ul id="hover3" class="f-dropdown "  data-dropdown-content>
+         							<div class="row">
+         							<p><center><b style="color: black;">Design Your Own Furniture</b></center>
+         							<div class="small-4 columns" style="text-align: justify;width: 175px ">
+         								
+         								<li style="text-align: center;width: 100%;"><a href="#">Wardrobes</a></li>
+         								<li style="text-align: center;width: 100%;"><a href="#">Study table</a></li>
+         								<li style="text-align: center;width: 100%;"><a href="#">Beds</a></li>
+         								<li style="text-align: center;width: 100%;"><a href="#">Curtains</a></li>
+         								<li style="text-align: center;width: 100%;"><a href="#">Chest of Drawers</a></li>
+         							</div>
+         							<div class="small-4 columns" style="text-align: justify;width: 160px">
+         								
+         								<li style="text-align: center;"><a href="#">Dining table</a></li>
+         								<li style="text-align: center;"><a href="#">Dining chairs</a></li>
+         								<li style="text-align: center;"><a href="#">coffee tables</a></li>
+         								
+
+         								
+         							</div>
+        						    </p>
+         								 
+        						</ul>
+      						</li>
+      						<li>
+      							  <a href="#"  data-dropdown="hover4" data-options="is_hover:true; hover_timeout:100">DECOR</a>
+       							 <ul id="hover4" class="f-dropdown "  data-dropdown-content>
+         						<div class="row">
+         							<div class="small-3 columns" style="text-align: justify;">
+         							<li><a href="#">Curtains</a></li>
+        						    <li><a href="#">Wallpapers</a></li>
+        						    </div>
+        						    </div>
+        						</ul>
+      						</li>
+      						<li >
+      							  <a href="#" data-dropdown="hover5" data-options="is_hover:true; hover_timeout:100">ON-SITE SERVICE</a>
+       							 <ul id="hover5" class="f-dropdown "  data-dropdown-content>
+       							 <div class="row">
+         							<div class="small-3 columns" style="text-align: justify;">
+         							<li><a href="#">Wooden Flooring</a></li>
+        						    <li><a href="#">False Ceiling</a></li>
+        						    </div>
+        						    </div>
+        						</ul>
+      						</li>
+      						<li >
+      							  <a href="#" data-dropdown="hover6" data-options="is_hover:true; hover_timeout:100">GALLERY</a>
+       							 <ul id="hover6" class="f-dropdown "  data-dropdown-content>
+       							 <div class="row">
+         							<div class="small-4 columns" style="text-align: justify;width: 170px">
+	         							<li style="text-align: center;"><a href="#">Modular Kitchens</a></li>
+	        						    <li style="text-align: center;"><a href="#">Bed Rooms</a></li>
+	        						   	<li style="text-align: center;"><a href="#">Living Rooms</a></li>
+	        						    <li style="text-align: center;"><a href="#">Study Rooms</a></li>
+	        						    <li style="text-align: center;"><a href="#">Dining Rooms</a></li>
+        						    </div>
+        						    <div class="small-3 columns" style="text-align: justify;width: 150px">
+	         							<li style="text-align: center;"><a href="#">Kid's Room</a></li>
+	        						    
+        						    </div>
+
+        						    </div>
+         							
+        						</ul>
+      						</li><!-- </ul><a href="#" class="orbit-prev"><span></span></a><a href="#" class="orbit-next"><span></span></a><div class="orbit-timer paused"><span></span><div class="orbit-progress" style="width: 0%;"></div></div><div class="orbit-slide-number"><span>1</span> of <span>3</span></div><div class="orbit-bullets-container"><ol class="orbit-bullets"><li data-orbit-slide="0" class="active"></li><li data-orbit-slide="1" class=""></li><li data-orbit-slide="2" class=""></li></ol></div></div>li> -->
+   					 </ul>
+			</section>
+     			</nav>
+			</div>
+		</div>
+
+
+	<div class="off-canvas-wrap">
+	 	<div class="row"> 
+  	 		 <div class="large-8 medium-8 small-12 columns" style="margin: 5px 0 0 0;padding:5px 0 0 0;">
+				<ul class="orbit-container" data-orbit data-options="animation:slide;
+                  pauseOnHover:true;
+                  animation_speed: 2000;
+                  timer_speed: auto 2000;
+                  navigation_arrows:false;
+                  bullets:true;" style="margin: 5px 0 0 0;">
+<!-- 	 	 			<ul data-orbit class="example-orbit orbit-slides-container">
+ -->          <li>
+    					<img src="curtains_banner.jpg" alt="slide 1" style="width: 50.4rem" />
+    		
+  	  				</li>
+ 		 			<li class="active">
+    					<img src="kitchen-home.jpg" alt="slide 2" style="width: 50.4rem"  />
+    		
+  					</li>
+  					<li>
+   			 			<img src="banner-sofa.jpg" alt="slide 3" style="width: 50.4rem" />
+    		
+  					</li>
+				</ul>
+      
+ 	  		</div>
+  			<div class="large-4 medium-4 small-12 columns backcolor_set" style="margin: 5px 0 0 0 ;">
+  				<h3 class="heading_on_image">We Do Complete Home Interiors</h3>
+  				<ul class="tag_line_image">
+
+  					<li><p class="contentadjust"><b>Modular Furniture -</b> " Kitchens, Wardrobes, TV Units, etc.</p></li>
+  					<li><p class="contentadjust"><b>All Furniture- </b>Sofas, Wooden-Cots, Tables, Chairs etc.</p></li>
+  					<li><p class="contentadjust"><b>On-site Services- </b> Painting, Electricals, Stone Cladding, Shower Cubicles, Wooden Flooring, False Ceiling, etc.
+  					</p></li>
+			<!-- <li>	<p class="contentadjust"><b>Appliances- </b>Hob, Chimney, Dishwasher, Refrigerator, etc.</p></li>
+
+			<li>	<p class="contentadjust"><b>Decor- </b>Curtains, Blinds, Mattresses, Wallpapers, etc.
+
+								& everything that you need to do your home interiors.</p></li> -->
+				</ul>				
+  				<div class="row">
+  					<div class="large-6 medium-6 small-12 columns" >
+  				   		<input type="text" placeholder="Mobile No." size="20"  data-invalid required="required" style="width:150px;background:rgba(224,224,224);height: 35px;padding-left: 10px;margin-left: 10px;">
+  			   		</div>
+  			   		<div class="large-6 medium-6 small-12 columns">
+  			   	   		<select required="required" style="width:130px;background:rgba(224,224,224);height: 35px;font-size: 13px;padding: 8px">
+  			   	   	
+
+  			   	   		<option value style=" color:blue">City</option>
+  			   	   		<option value="Hyderabad">Hyderabad</option>
+  			   	   		<option value="Hyderabad">Vizag</option>
+  			   	   		<option value="Hyderabad">Chennai</option>
+  			   	   		<option value="Hyderabad">Bangalore</option>
+  			   	   		<option value="Hyderabad">Other</option>
+
+  			   	   		</select>
+  					</div>
+  			
+  					<div class="large-12 medium-12 small-12 columns center" >
+  			       		<input type="submit" class="button" value="contact Me" style="text-align: center;">
+  			   		</div>
+   			<div class="large-12 medium-12 small-12 columns"><marquee><p style="padding-top: 34px; color:red"><b>Our Show Rooms Are open on sunday</b></p></marquee></div>
+  		 
+  		
+  	            </div>
+
+             </div>
+        </div>	
+
+        <div class="row home_page_title" style="margin-top: 10px;margin-bottom: 10px;padding-top: 0px;padding-bottom: 0px;">
+
+        	<h2 class="home_page_heading">By Customised Interiors Directly From The Manufacturer</h2>
+        </div>
+        <div class="row">
+        	<p class="home_paragraph" style="margin-top:5px;margin-bottom: 20px;">
+        		We are a vertically integrated online furniture company providing end-to-end interior solutions.<br>
+                   We design in-house, make furniture at our own manufacturing facility & sell online. <br>
+						This allows us to sell at 30% below market price.</p>
+        </div>
+        
+        <div class=" row furnish_menu">
+        	<div class="large-12 medium-12 small-12 columns">
+
+        		<div class="home_page_heading" style="top:0%;">
+        			Complete Interior Design Packages<br>
+        			  On Full Home Furnishing
+        		</div>
+        		<p class="home_paragraph">     The following complete home furnishing offers for Villa, 4BHK, 3BHK and 2 BHK includes <br>
+							modular kitchens, wardrobes, sofas, coffee tables, beds, dining sets, tables & chairs, wallpapers & curtains.</p>
+        	</div>
+        	<div class="large-12 medium-12 small-12 columns">
+
+        		<ul class="large-block-grid-4 medium-block-grid-2 small-block-grid-1 columns" style="margin-top: 10px;">
+        			<li>
+        				<div><img src="2bhk.jpg" alt="2bhk" style="max-width:100%;height:auto;display: inline-block;">
+        				</div>
+        				<div class="button twobhk bhkbutton">
+        					2BHK  Interiors <br>
+        					<p class="fontsize">Starting @ Rs. 4.9Lakhs</p>
+        				</div>
+        			</li>
+        			<li>
+        				<div><img src="villa.jpg" alt="villa" style="max-width:100%;height:auto;display: inline-block;">
+        				</div>
+        				<div class="button  threebhk bhkbutton">
+        					3BHK  Interiors <br>
+        					<p class="fontsize">Starting @ Rs. 7.9Lakhs</p>
+        				</div>
+        			</li>
+        			<li>
+        				<div><img src="4bhk.jpg" alt="4bhk" style="max-width:100%;height:auto;display: inline-block;">
+        				</div>
+        				<div class="button fourbhk bhkbutton">
+        					4BHK  Interiors <br>
+        			  <p style="margin-right: -1px;">Starting @ Rs. 10.9Lakhs</p>
+        			   							
+        				</div>
+        			</li>
+        			<li>
+        				<div><img src="villa_1.jpg" alt="villa_1" style="max-width:100%;height:auto;display: block;">
+        				</div>
+        				<div class="button villabutton twobhkbutton">
+        					villa  Interiors <br>
+        				<p class="fontsize" style="margin-right:5px;">	Starting @ Rs. 11.9Lakhs</p>
+        				</div>
+        			</li>
+        </div>
+
+        <div class="row furnish_icon">
+        	<div class="large-12 medium-12 small-12 columns">
+        		<div class="home_page_heading" >Personalise Your Home Interiors</div>
+        		<div>
+        			<p class="home_paragraph">Customise all of your home furniture using custom furniture designer tools.<br>
+					Enter desired dimensions, materials, styles, colours & finishes. Get instant prices online.</p>
+				</div>
+				<div class="large-12 medium-12 small-12 columns">
+					<ul class="small-block-grid-2 large-block-grid-4 medium-block-grid-2 img_icon_size">
+						<li>
+							<img src="modular-kitchen.png" alt="modular-kitchen" style="width: 55%;height: 55%;margin-left: 20px;">
+							<p style="font-size: 14px;display: block;margin: 0 auto;">Modular Kitchen</p> 
+						</li>
+						<li>
+							<img src="wardrobe.png" alt="wardrobe" style="width: 60%;height: 60%;">
+							<p style="font-size: 14px;display: block;margin: 0 auto;">Wardrobes</p> 
+						</li>
+						<li>
+							<img src="sofas.png" alt="sofas" style="width: 60%;height: 60%;margin-left: 30px;">
+							<p style="font-size: 14px;display: block;margin: 0 auto;text-align: center;">Sofas</p> 
+						</li>
+						<li>
+							<img src="curtains.png" alt="curtains" style="width: 60%;height: 60%;margin-left:30px ">
+							<p style="font-size: 14px;display: block;margin: 0 auto;text-align: center;">Curtains</p> 
+						</li>
+
+					</ul>
+				</div>		
+			</div>
+		</div>			
+    </div>         
+
+    <div class="row show-for-medium-up" style="background-color: #fafafa !important;margin-top: 4px;margin-bottom: 4px;">
+      <div class="large-5 medium-8 small-7 columns imageset">
+        <ul class="large-block-grid-1 medium-block-grid-1 small-block-grid-1">
+          <li>
+           <img class="kitchenimg" src="download.jpg" alt="modular-kitchen">
+         </li>
+       </ul>
+       </div>
+       <div class="large-3 medium-4 small-5 columns parent">
+         <img src="2bhk.jpg" alt="image1" class="image1">
+         <img src="2bhk.jpg" alt="image2" class="image2">
+     </div>
+     <div class="columns large-4 medium-12 small-12 column-clear home-block-section">
+                <div class="home_page_heading" style="margin-top: 10px !important;">
+                    Modular Kitchens
+                </div>
+                <div>
+                    <p class="home_paragraph">Customize your kitchen cabinets &amp; <br> get prices instanly online</p>
+                    <input type="submit" value="Get Instant Estimate" class="button" style="padding-top: 25px !important;padding-bottom: 25px ">
+                </div>
+            </div>
+    </div>
+    <div class="row show-for-medium-up" style="background-color: #fafafa !important;margin-top: 4px;margin-bottom: 0px;">
+      <div class="columns large-4 medium-12 small-12 column-clear home-block-section" style="padding: 15px; border-bottom: none;">
+                <div class="home_page_heading" style="margin-top: 10px !important;">
+                    Wardrobes
+                </div>
+                <div>
+                    <p class="home_paragraph">Build smart storage spaces. Customise  <br>
+not just exteriors but also interiors</p>
+                    <input type="submit" value="Get Instant Estimate" class="button" style="text-align: center;padding-top: 25px !important;padding-bottom: 25px !important;padding-right: 10px !important;padding-left: 20px !important">
+                </div>
+        </div>
+      <div class="large-5 medium-8 small-7 columns imageset">
+        <ul class="large-block-grid-1 medium-block-grid-1 small-block-grid-1">
+          <li>
+           <img class="kitchenimg" src="download.jpg" alt="modular-kitchen">
+         </li>
+       </ul>
+       </div>
+       <div class="large-3 medium-4 small-5 columns parent">
+         <img src="2bhk.jpg" alt="image1" class="image1">
+         <img src="2bhk.jpg" alt="image2" class="image2">
+     </div>
+     
+    </div>
+     <div class="row show-for-medium-up" style="background-color: #fafafa !important;margin-top: 4px;margin-bottom: 4px;">
+      <div class="large-5 medium-8 small-7 columns imageset">
+        <ul class="large-block-grid-1 medium-block-grid-1 small-block-grid-1">
+          <li>
+           <img class="kitchenimg" src="sofas.jpg" alt="modular-kitchen">
+         </li>
+       </ul>
+       </div>
+       <div class="large-3 medium-4 small-5 columns parent">
+         <img src="sofas_1jpg.jpg" alt="image1" class="image1">
+         <img src="sofas_1jpg.jpg" alt="image2" class="image2" style="width:248px !important;height: 120px !important">
+     </div>
+     <div class="columns large-4 medium-12 small-12 column-clear home-block-section">
+                <div class="home_page_heading" style="margin-top: 10px !important;">
+                    Sofas
+                </div>
+                <div>
+                    <p class="home_paragraph">Choose from a collection of contemporary <br>
+upholstered sofas & sectionals</p>
+                    <input type="submit" value="View Collection" class="button"  style="padding-top: 25px !important;padding-bottom: 25px ">
+                </div>
+            </div>
+    </div>
+    <div class="row show-for-medium-up" style="background-color: #fafafa !important;margin-top: 9px;margin-bottom: 0px;">
+      <div class="columns large-4 medium-12 small-12 column-clear home-block-section" style="padding: 15px; border-bottom: none;">
+                <div class="home_page_heading" style="margin-top: 10px !important;">
+                    Curtains
+                </div>
+                <div>
+                    <p class="home_paragraph">Dress up your home with fine premium <br>
+curtains crafted to perfection</p>
+                    <input type="submit" value="Customize Now" class="button" style="text-align: center;padding-top: 25px !important;padding-bottom: 25px !important;padding-right: 10px !important;padding-left: 20px !important;margin-bottom: 20px !important">
+                </div>
+        </div>
+      <div class="large-5 medium-8 small-7 columns imageset">
+        <ul class="large-block-grid-1 medium-block-grid-1 small-block-grid-1">
+          <li>
+           <img class="kitchenimg" src="curtain.jpg" alt="modular-kitchen">
+         </li>
+       </ul>
+       </div>
+       <div class="large-3 medium-4 small-5 columns parent">
+         <img src="curtain_1.jpg" alt="image1" class="image1">
+         <img src="curtain_1.jpg" alt="image2" class="image2" style="width:280px !important;height: 120px !important;margin-bottom: 10px !important;">
+     </div>
+   </div>
+   <!--for small only-->
+
+   <div class="row hide-for-medium-up">
+         <div class="row">
+               <h1 style="font-size:20px; text-align:center; margin-top:50px !important;">Modular Kitchens</h1>
+               <p style="text-align:center;">Customize your kitchen cabinets & <br/>get prices instanly online</p>
+                <center><div class="button modular-button large-push-3" style="background-color:rgb(102,49,14);padding-bottom: 10px !important; height: 55px !important;">Get Instant Estimate</div></center>
+          </div>
+                               
+          <div class="row">
+                <div class="small-12 columns modular">
+                  <img src="download.jpg">
+                </div>
+          </div>
+          <div class="row">
+                <img class="small-6 columns modular-small-1" src="sofas_1jpg.jpg">
+                <img class="small-6 columns modular-small-2" src="sofas_1jpg.jpg">
+          </div>
+      </div>
+
+      <div class="row hide-for-medium-up ">    
+          <div class="row">
+               <h1 style="font-size:20px; text-align:center; margin-top:50px !important;">Wardrobes</h1>
+               <p style="text-align:center;">Customize your kitchen cabinets & <br/>get prices instanly online</p>
+                <center><div class="button" style="background-color:rgb(102,49,14);padding-bottom: 5px!important;height: 55px !important;">Get Instant Estimate</div></center>
+          </div>
+          <div class="row">
+                <div class="small-12 columns modular">
+                  <img src="download.jpg">
+                </div>
+          </div>                     
+          
+          <div class="row">
+                <img class="small-6 columns modular-small-1" src="sofas_1jpg.jpg">
+                <img class="small-6 columns modular-small-2" src="sofas_1jpg.jpg">
+          </div>
+
+      </div>
+      <div class="row hide-for-medium-up " >    
+          <div class="row">
+               <h1 style="font-size:20px; text-align:center; margin-top:50px !important;">Sofas</h1>
+               <p style="text-align:center;">Customize your kitchen cabinets & <br/>get prices instanly online</p>
+                <center><div class="button modular-button large-push-3" style="background-color:rgb(102,49,14);padding-bottom: 10px !important;height: 55px !important;">Get Instant Estimate</div></center>
+          </div>
+          <div class="row">
+                <img class="small-6 columns modular-small-1" src="sofas_1jpg.jpg">
+                <img class="small-6 columns modular-small-2" src="sofas_1jpg.jpg" style="border-bottom: 2px solid white">
+          </div>
+          <div class="row ">
+                <div class="small-12 columns modular">
+                  <img src="sofas.jpg" >
+                </div>
+          </div>                     
+  
+      </div>
+      <div class="row hide-for-medium-up ">    
+          <div class="row">
+               <h1 style="font-size:20px; text-align:center; margin-top:50px !important;">Curtains</h1>
+               <p style="text-align:center;">Customize your kitchen cabinets & <br/>get prices instanly online</p>
+                <center><div class="button modular-button large-push-3" style="background-color:rgb(102,49,14);padding-bottom: 5px !important;height: 55px !important;">Get Instant Estimate</div></center>
+          </div>
+          <div class="row">
+                <img class="small-6 columns modular-small-1" src="curtain_1.jpg">
+                <img class="small-6 columns modular-small-2" src="curtain_1.jpg" style="border-bottom: 2px solid white">
+          </div>
+          <div class="row ">
+                <div class="small-12 columns modular">
+                  <img src="curtain.jpg">
+                </div>
+          </div>                        
+
+      </div>
+      <div class="row">
+      <div class="large-12 medium-12 small-12 columns">
+       <div  class="home_page_heading" style="margin-top:30px !important;">
+          Furniture Design Studio</div>
+        </div>
+        <p class="home_paragraph" style="margin-bottom: 10px !important;">Style your furniture from wide choices of materials, colours & finishes</p>  
+      </div> 
+
+  <div class="row" style="background-color: #fafafa !important;margin-top: 9px !important;">
+    <div class="large-12 medium-12 small-12 columns">
+      <div class="home_page_heading">Bed Room & Dressing</div>
+      <ul class="large-block-grid-4 medium-block-grid-2 small-block-grid-1">
+        <li style="padding: 5px;">
+          <img src="beds.jpg" alt="beds">
+          <p class="heading">Beds</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.27,357/-</p>
+          <p class="home_paragraph">Design Beds for the best sleep <br>time for your self</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="wardrobes.jpg" alt="wardrobes">
+          <p class="heading">Wardrobes</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.16,780/-</p>
+          <p class="home_paragraph">Customise every bit of storage <br>way it looks & how it stores</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="chest-of-drawers.jpg" alt="c_f_d">
+          <p class="heading">Chest of Drawers</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.9,114/-</p>
+          <p class="home_paragraph">Trendy chest of drawers for the <br>dawns & dusks of your days</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="dressers.jpg" alt="dresses">
+          <p class="heading">Dressers</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.7,853/-</p>
+          <p class="home_paragraph">Refelect your true beauty with <br>resplendent dressers</p>
+        </li>
+      </ul>
+    </div>
+    <div class="large-12 medium-12 small-12 columns">
+      <div class="home_page_heading">Living Room & Pooja</div>
+      <ul class="large-block-grid-4 medium-block-grid-2 small-block-grid-1">
+        <li style="padding: 5px;">
+          <img src="coffee-table.jpg" alt="coffeetable">
+          <p class="heading">Coffee Tables</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.5,531/-</p>
+          <p class="home_paragraph">Adorn your pleasing room<br>with functional coffee table</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="shoe-racks.jpg" alt="shoeracks">
+          <p class="heading">Shoe Racks</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.3,530/-</p>
+          <p class="home_paragraph">Uncustomary shoe racks for your<br>foot wear collection</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="wall-units.jpg" alt="wallunit">
+          <p class="heading">Wall Units</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.1,650/-</p>
+          <p class="home_paragraph">Express your creative brilliance<br>with adorable wall units</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="pooja-unit.jpg" alt="poojunit">
+          <p class="heading">Pooja Units</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.8,298/-</p>
+          <p class="home_paragraph">Contempo in zest with <br>inspirational traditional styling</p>
+        </li>
+      </ul>
+  </div>
+   <div class="large-12 medium-12 small-12 columns">
+      <div class="home_page_heading">Home Office & Study</div>
+      <ul class="large-block-grid-4 medium-block-grid-2 small-block-grid-1">
+        <li style="padding: 5px;">
+          <img src="book-shelves.jpg" alt="bookshelves">
+          <p class="heading">Book Shelves</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.10,000/-</p>
+          <p class="home_paragraph">Efficient storage racks for the<br>stylish and bookworms</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="study-tables.jpg" alt="studytable">
+          <p class="heading">Study Tables</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.10,183/-</p>
+          <p class="home_paragraph">For both creative ones and the<br>disciplined lot</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="console-units.jpg" alt="consolunit">
+          <p class="heading">Console Units</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.10,286/-</p>
+          <p class="home_paragraph">Fine console units are great<br>choices for ingenious interiors</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="stool.jpg" alt="stool">
+          <p class="heading">Stools</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.2,723/-</p>
+          <p class="home_paragraph">Upholsted on hard wood, for a <br>need that is quick & smart</p>
+        </li>
+      </ul>
+  </div>
+   <div class="large-12 medium-12 small-12 columns">
+      <div class="home_page_heading">Dining Room & Bar</div>
+      <ul class="large-block-grid-4 medium-block-grid-2 small-block-grid-1">
+        <li style="padding: 5px;">
+          <img src="crockery-unit.jpg" alt="crockeryunit">
+          <p class="heading">Crockery Units</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.14,245/-</p>
+          <p class="home_paragraph">Strinking units that flaunt your <br>finest crockery</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="dining-tables.jpg" alt="diningtable">
+          <p class="heading">Dining Tables</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.13,724/-</p>
+          <p class="home_paragraph">Urban desiner dining sets for an<br>esquisite lifestyle</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="chairs.jpg" alt="chairs">
+          <p class="heading">Chairs</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.4,090/-</p>
+          <p class="home_paragraph">Upholsted seater selection<br>eptomising design finesse</p>
+        </li>
+        <li style="padding: 5px;">
+          <img src="bar-unit.jpg" alt="bar-unit">
+          <p class="heading">Bar Units</p>
+          <p style="font-size:15px;text-align: center;">Starting @ Rs.10,859/-</p>
+          <p class="home_paragraph">Hover around abundance with<br>poised bar units</p>
+        </li>
+      </ul>
+  </div>
+</div> 
+ <div class="row" style="background-color: #fafafa;margin-top: 9px;">
+      <div class="home_page_heading">Onsite Services</div>
+      <p class="home_paragraph">Embed your home with glorious false ceilings & chic wooden floorings</p>
+
+      <div class="large-12 medium-12 small-12 columns">
+          <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-2">
+            <li>
+                <img src="falseceiling.jpg" alt="falseceiling">
+              <p class="onsite_para">False Ceiling</p>
+
+            </li>
+            <li>
+              <img src="woodenflooring.jpg" alt="woodenflooring">
+              <p class="onsite_para">Wooden Flooring</p>
+            </li>
+          </ul>
+      </div>
+
+  </div>
+  <div class="row" style="background-color: #fafafa;margin-top: 9px;">
+    <div class="home_page_heading">Interior Design Service</div>
+    <p class="home_paragraph">We offer end to end interior design solutions, customised upto the last inch. <br>
+                            You have everything that you can think of in interiors, all under a single roof.<br>
+                            <br>
+                            Given that we manufacture at our own facility we provide best prices.<br>
+                            <br>
+                            Bottomline is that, rest assured, you won't go disappointed.</p>
+    </div>          
+    <div class="row show-for-medium-up" style="background-color: #fafafa;margin-top: 9px;">
+        <div class="home_page_heading">TestiMonials</div>
+
+        <div class="autoplay">
+              <div><img src="bhaskaran-1.jpg" alt="img1"><p class="home_paragraph">
+                            My overall experience with CustomFurnish was <br>excellent. The customer service, quality of <br>renders,design, products and overall
+
+                            experience <br>was very good. My interaction with entire team<br> through out the project was exceptionally good.
+                        </p>
+                        <p class="heading">Bhaskaran<br><span style="color: red">Chennai</span></p>
+
+                </div>
+              <div><img src="shastri-2.jpg" alt="img1" style="height: 212px"><p class="home_paragraph">
+                            We have placed an full house-furnishing order <br>with CustomFurnish, and they have beautifully<br> furnished my home.
+
+                            The quality is very good and <br>they have done a great job for us. Thanks for <br>CustomFurnish.
+                        </p>
+                        <p class="heading">Sastry<br><span style="color: red">Bengalore</span></p>
+                </div>
+              <div><img src="vasanth-kumar-1.jpg" alt="img1"><p class="home_paragraph">
+                            CustomFurnish had designed and delivered the <br>interior work for my 3BHK flat at Ayyanna Pearl,
+
+                           <br> Kakatiya Hills, Hyderabad. They have a done a <br>wonderful job to the happiest end of my <br>satisfaction.
+
+                            The designs are contemporary, most <br>of them are original and not seen elsewhere.
+
+                           <br> Wish you deliver many such beautiful projects<br> across the country and make people happier!
+                        </p>
+                       <p class="heading">Vasnath Kumar<br><span style="color: red">Hyderabad</span></p>
+
+                </div>
+              <div><img src="amit-mehra-3.jpg" alt="img1"><p class="home_paragraph">
+                            I am really happy with the way my flat is being <br>furnished. Whoever has seen my flat they are <br>saying
+
+                            it's pretty good and asking me where did <br>we get it done. I am really impressed with their
+
+                           <br> quality and finish and I would definitely recommend<br> other to try CustomFurnish.
+                        </p>
+                       <p class="heading">Amit Mehra<br><span style="color: red">Lanco Hills</span></p>
+
+              </div>
+              <div><img src="venkata-ramana-2.jpg" alt="img1"><p class="home_paragraph">
+                            We are very happy with the job done in our flat.<br> We specially want to thank interior designers
+
+                            for <br>all the hard work that they put in, they designs <br>have definitely reached our satisfaction and <br>expectations.
+
+                            Thank you Team CustomFurnish, <br>keep up the good work!
+                        </p>
+                      <p class="heading">G.Venkataramana Rao<br><span style="color: red">Hyderabad</span></p>
+               </div>
+              <div><img src="meenakshi-6.jpg" alt="img1"><p class="home_paragraph">
+                            We are very satisfied with the full furnishings of <br>our apartment and the best thing is,
+
+                            it happened<br> without our presence. Your timely work and <br>response was awesome.
+
+                            I am very happy with the<br> service I got from CustomFurnish
+                        </p>
+                        <p class="heading">Meenakshi<br><span style="color: red">Hyderabad</span></p>
+
+              </div>
+        </div>         
+        
+    </div>  
+    <div class="row hide-for-medium-up" style="background-color: #fafafa;margin-top: 9px;">
+        <div class="home_page_heading">TestiMonials</div>
+
+        <div class="autosliding">
+              <div><img src="bhaskaran-1.jpg" alt="img1"><p class="home_paragraph">
+                            My overall experience with CustomFurnish was <br>excellent. The customer service, quality of <br>renders,design, products and overall
+
+                            experience <br>was very good. My interaction with entire team<br> through out the project was exceptionally good.
+                        </p>
+                        <center><p class="heading">Bhaskaran<br><span style="color: red">Chennai</span></p></center>
+
+                </div>
+              <div><img src="shastri-2.jpg" alt="img1" style="height: 212px"><p class="home_paragraph">
+                            We have placed an full house-furnishing order <br>with CustomFurnish, and they have beautifully<br> furnished my home.
+
+                            The quality is very good and <br>they have done a great job for us. Thanks for <br>CustomFurnish.
+                        </p>
+                        <center><p class="heading">Sastry<br><span style="color: red">Bengalore</span></p></center>
+                </div>
+              <div><img src="vasanth-kumar-1.jpg" alt="img1"><p class="home_paragraph">
+                            CustomFurnish had designed and delivered the <br>interior work for my 3BHK flat at Ayyanna Pearl,
+
+                           <br> Kakatiya Hills, Hyderabad. They have a done a <br>wonderful job to the happiest end of my <br>satisfaction.
+
+                            The designs are contemporary, most <br>of them are original and not seen elsewhere.
+
+                           <br> Wish you deliver many such beautiful projects<br> across the country and make people happier!
+                        </p>
+                      <center> <p class="heading">Vasnath Kumar<br><span style="color: red">Hyderabad</span></p></center>
+
+                </div>
+              <div><img src="amit-mehra-3.jpg" alt="img1"><p class="home_paragraph">
+                            I am really happy with the way my flat is being <br>furnished. Whoever has seen my flat they are <br>saying
+
+                            it's pretty good and asking me where did <br>we get it done. I am really impressed with their
+
+                           <br> quality and finish and I would definitely recommend<br> other to try CustomFurnish.
+                        </p>
+                      <center><center> <p class="heading">Amit Mehra<br><span style="color: red">Lanco Hills</span></p></center>
+
+              </div>
+              <div><img src="venkata-ramana-2.jpg" alt="img1"><p class="home_paragraph">
+                            We are very happy with the job done in our flat.<br> We specially want to thank interior designers
+
+                            for <br>all the hard work that they put in, they designs <br>have definitely reached our satisfaction and <br>expectations.
+
+                            Thank you Team CustomFurnish, <br>keep up the good work!
+                        </p>
+                     <center> <p class="heading">G.Venkataramana Rao<br><span style="color: red">Hyderabad</span></p></center>
+               </div>
+              <div><img src="meenakshi-6.jpg" alt="img1"><p class="home_paragraph">
+                            We are very satisfied with the full furnishings of <br>our apartment and the best thing is,
+
+                            it happened<br> without our presence. Your timely work and <br>response was awesome.
+
+                            I am very happy with the<br> service I got from CustomFurnish
+                        </p>
+                      <center>  <p class="heading">Meenakshi<br><span style="color: red">Hyderabad</span></p></center>
+
+              </div>
+        </div>         
+        
+    </div>  
+    <div class="row" style="background-color: #fafafa;margin-top: 10px;">
+        <div class="home_page_heading">Why CustomFurnish?</div>
+        <div class="large-12 medium-12 small-12">
+          <ul class="large-block-grid-6 medium-block-grid-3 small-block-grid-2">
+            <li class="center">
+              <img src="Best-Price.png" alt="bestprice" style="width: 55%;height: 55%;margin-left: 40px;align-content: right;">
+              <p class="home_paragraph">Best-Price</p>
+            </li>
+            <li class="center">
+               <img src="premium-quality.png" alt="premiumquality"  style="width: 55%;height: 55%;margin-left: 28px;">
+              <p class="home_paragraph">Premium Quality</p>
+            </li>
+            <li class="center">
+               <img src="emi.png" alt="emi"  style="width: 55%;height: 55%;margin-left: 35px;">
+              <p class="home_paragraph">Easy EMI</p>
+            </li>
+            <li class="center">
+               <img src="free-delivery.png" alt="freedelivery"  style="width: 55%;height: 55%;margin-left: 27px;">
+              <p class="home_paragraph">Free-Delivery</p>
+            </li>
+            <li class="center">
+               <img src="free-installation.png" alt="freeinstallation"  style="width: 55%;height: 55%;margin-left: 28px;">
+              <p class="home_paragraph">Free Installation</p>
+            </li>
+            <li class="center">
+               <img src="warranty.png" alt="waaranty"  style="width: 55%;height: 55%;margin-left: 25px;">
+              <p class="home_paragraph">Warranty</p>
+            </li>
+          </ul>
+       </div>   
+    </div>
+    <div class="row" style="background-color: #fafafa;margin-top: 10px;">
+        <div class="home_page_heading">About CustomFurnish</div>
+
+        <div class="large-12 medium-12 small-12 columns">
+
+          <p class="home_paragraph" style="text-align: center;">CustomFurnish specializes in providing end to end interior solutions for homes & offices. CustomFurnish has over years built up a strong design<br> expertise backed by state-of-the-art manufacturing. Additionally, CustomFurnish reaches to the end customer directly cutting out all middle men <br>and has been able to provide best value for money.<br> 
+          <br>
+          We at CustomFurnish are 50+ designers strong with 5 manufacturing facilities and sell in 3 cities- Chennai, Bangalore & Hyderabad.<br> 
+          <br>
+          CustomFurnish holds transparency and customer centrality as core values and hence been able to provide fixed & transparent pricing, value for <br>money, hassle free buying (purchase, delivery & installation) , expert design consulting for no premium, excellent quality, wide selection and <br>more importantly a trustworthy partnership. <br>
+          <br>
+          CustomFurnish provides design consulting and creative assistance in choices for bespoke furnishing and home furniture, encompassing <br>everything from flooring to false-ceiling, lighting, paints, hardware selection, full home furnishing- modular kitchen, wardrobes, kids room furniture,<br> dressing room furniture, living room furniture, curtains, beds, sofas, entertainment units and other stand alone furniture required for your home. <br>This service can be availed for free for purchases made on the design document.<br> 
+          <br>
+          Apart from custom furnishing, a host of pre-made, off the shelf furniture is also offered. Choices include contemporary collection of beds, dining <br>tables, dining sets, wardrobes, shoe racks, study tables, TV units, coffee tables, chest of drawers, chairs, side tables, console units and all furniture. <br>
+          <br>
+          Rest assured, you wont be disappointed! Request a designer to contact you now! Call 9014324646.</p>
+
+        </div>
+    </div>
+    
+    
+
+  
+       
+    <script src="js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script> 
+<script src="js/foundation.min.js"></script>
+
+   <script type="text/javascript">
+     $('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+});
+
+    $('.autosliding').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+});
+ 
+    $(document).foundation({
+  dropdown: {
+    // specify the class used for active dropdowns
+    active_class: 'open'
+  }
+});
+  </script>        
+	</body>
+</html>
