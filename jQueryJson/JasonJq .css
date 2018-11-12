@@ -1,0 +1,49 @@
+.adjust{
+	margin-left: 24% !important;
+	text-align: center;
+	border:1px solid dotted;
+}
+h3{
+	background-color: grey;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.contentsize{
+	width:60% !important;
+	height: 60% !important;
+}
+.divcontentsize{
+	width:40% !important;
+	padding: 20px !important;
+}
+.siginbtn{
+	padding: 5px;
+	width:30%;
+}
+.searchdatasize{
+	width:50% !important;
+	margin-left: 30% !important
+}
+#searchtxt{
+	width:30%;
+}
+#searchbtn{
+	margin: 0px;
+	padding: 5px;
+	width:10%;
+	color: white;
+}
+input[type="file"]{
+
+	width:30%;
+	font-style: 0px !important;
+	font-size: 15px !important;
+}
+#uploadbtn{
+	margin: 0px !important;
+	padding: 5px !important;
+	width:10% !important;
+	color: white !important;
+	font-size: 15px !important;
+}

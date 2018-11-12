@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>csv file</title>
+	<link rel="stylesheet" href="JasonJq .css" />
+	<link rel="stylesheet" href="css/foundation.css" />
+	 <link rel="stylesheet" href="css/normalize.css" />
+	 <script src="js/vendor/modernizr.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<center><h3>JSON</h3></center>
+	</header>
+    
+	<ul class="tabs adjust" data-tab>
+		  <li class="tab-title active"><a href="#welcome">Welcome</a></li>
+		   <li class="tab-title"><a href="#submitdata" data-reveal-id="mymodal">Submit Form</a></li>
+		  <li class="tab-title"><a href="#viewdata" id="viewbtn">View Data</a></li>
+		  <li class="tab-title"><a href="#searchdata">Search Data</a></li>
+		  <li class="tab-title"><a href="#downloaddata">Download</a></li>
+		  <li class="tab-title"><a href="#uploaddata">Upload</a></li>
+	</ul>
+    <div class="tabs-content">
+  	
+		<div id="mymodal" class="reveal-modal tiny" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+		    <center>
+		        <h2>Sigin</h2>
+                <form data-abide class="content contentsize" id="submitdata">
+                 
+					  <div class="name-field ">
+					    
+					    <input class="inputsize" type="text" placeholder="Name" id="uname" name="uname">
+					    
+					   
+					  </div>
+					  <div class="email-field">
+					    
+					    <input class="inputsize" type="email" placeholder="Email" id="email" name="email">
+					    
+					    
+					  </div>
+					  <div class="password-field">
+					    
+					    <input class="inputsize" type="text" placeholder="Mobile Number" id="mobilenum" name="mobilenum">
+					    
+					    
+					  </div>
+				   
+				  	<button type="submit" class="siginbtn">Signin</button>
+			    </form>
+			</center>
+		  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+     	</div>
+
+     	<section role="tabpanel" aria-hidden="false" class="content active" id="welcome">
+		    <center><h4>Welcome to <i>JSON</i></h4></center>
+		</section>
+     	
+     	<div class="content viewdatasize" id="searchdata">
+     	<center>	<div class=" row">
+     			<p>Enter the text to search</p>
+     			<input type="text" id="searchtxt">
+     			<button type="search" id="searchbtn">search</button>
+     			<div id="searchcnt"></div>
+     		</div></center>
+     	</div>
+     	<section role="tabpanel" aria-hidden="true" class="content" id="viewdata">
+			<!-- <button id="viewbtn" hidden="true">view data</button> -->
+			<div id="showdata"></div>
+		</section>
+
+		<section role="tabpanel" aria-hidden="true" class="content" id="uploaddata">
+			<div class="row">
+				<div style="text-align: center" >
+					<div class="large-offset-5">
+						<h2>	<input type="file" id="file" ></h2>
+					</div>
+					<button onclick="uploadcsv();" id="uploadbtn">upload csv</button>
+				</div>
+			</div>
+		</section>
+		<section role="tabpanel" aria-hidden="true" class="content" id="downloaddata">
+							<div class="row">
+									<div style="text-align: center;" >
+										<button onclick="getData();">getdata</button>
+									</div>
+							</div>
+					</section>
+     </div>
+
+     <div id="myModal" class="reveal-modal tiny" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+		<div class="row">
+			<div style="text-align: center" >
+				
+				<form id="updateform">
+						<p>Enter values to be updated</p>
+					<table align="center" >
+						<tr>
+				<td>Enter name</td><td><input type="text" id="username" name="name"></td></tr>
+				<tr><td>Enter emailid</td><td><input type="text" id="emailid" name="emailID"></td></tr>
+				<tr><td>Enter mobile number</td><td><input type="text" id="phno" name="phonenum"></td></tr>
+				<tr><td></td><td><input type="submit" ></td></tr></table>
+			</form>
+				<input type="hidden" id="temp">
+				</div>
+				 <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	  	</div>
+	</div>
+
+         <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+
+     <script src="JsonJq .js"></script>
+     <script src="Validater.js"></script>
+     <script src="HelperFun.js"></script>
+     <script src="downloadcsv.js"></script>
+	<script src="uploadcsv.js"></script>
+   	
+   	<script type="text/javascript">
+	    $(document).foundation({
+	    	
+	    });
+
+	</script>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	    	
+	    });
+
+	</script>
+</body>
+</html>
