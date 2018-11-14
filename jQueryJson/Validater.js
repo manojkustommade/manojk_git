@@ -17,8 +17,12 @@ function checkDetails(name,email,phonenum){
 			alert("Enter valid Mobile Number");
 			flag=false;
 		}
-		return flag;
+		
 
 	}	
+	else{
+		flag=false;
+	}
+	return flag;
 
 }

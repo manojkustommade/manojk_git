@@ -20,7 +20,7 @@ $("#submitdata").submit(function(eve){
     var email=formdata.get("email");
     var phonenum=formdata.get("mobilenum");
    if(checkDetails(name,email,phonenum)){
-            if(helperfunction(jsonArr,email,"adddata")){ 	
+            if(!helperfunction(jsonArr,email,"adddata")){ 	
                 	jsonObj.uname=name;
                 	jsonObj.email=email;
                 	jsonObj.mobilenum=phonenum;
@@ -124,7 +124,7 @@ $("#updateform").submit(function(){
     var phonenum=formdata.get("phonenum");
     var temp=$("#temp").val();
     if(checkDetails(name,email,phonenum)){
-            if(helperfunction(jsonArr,email,"update")){ 
+            if(!helperfunction(jsonArr,email,"update")){ 
             
                 jsonArr[temp-1].uname=name;
                 jsonArr[temp-1].email=email;
@@ -142,11 +142,9 @@ $("#updateform").submit(function(){
 
         
     }
-    else{
-        alert("Please enter the details");
-    }
+    
 
-
+    return false;
 });
 
 function deletedata($this){

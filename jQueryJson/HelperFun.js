@@ -1,12 +1,12 @@
 function helperfunction(jsonArr,email,val){
-	var dataExist=true;
+	var dataExist=false;
 	getStoredData();
 	if(val=="adddata"){
 		
 	     jsonArr.forEach(function(arrayitem){
 	        $.each( arrayitem, function( key, value ) {
 					if( value==email){
-	                    dataExist=false;
+	                    dataExist=true;
 	                }
 	        });
 	     });
@@ -21,7 +21,7 @@ function helperfunction(jsonArr,email,val){
                 $.each( arrayitem, function( key, value ) {
 
                     if( key=="email" && value==email){
-                        dataExist=false;
+                        dataExist=true;
                     }
 
                 });
