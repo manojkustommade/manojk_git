@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascipt Usage</title>
+	
+</head>
+<body>
+   <center>
+        <h3>Signup</h3>
+       <form id="reset">
+	    <table border="1px">
+
+		  <tr>
+		    <th><label>Username</label></th>
+		    <td><input type="text" id="uname" placeholder="name"></td>
+		  </tr>
+		  <tr>  
+		    <th><label>Email</label></th>
+		    <td><input type="text" id="mail" placeholder="Email"></td>
+		  </tr>
+          <tr>
+		    <th><label>Password</label></th>
+		    <td><input type="Password" id="pwd" placeholder="Password"></td>
+		  </tr>
+		  <tr>  
+		    <th><label>Confirm Password</label></th>
+		    <td><input type="Password" id="cpwd" placeholder="Confrm Password"></td>
+		  </tr>
+		  <tr>  
+	        <th><label>Mobile Number</label></th>
+		    <td><input type="text" id="Mnum" placeholder="Phone Number" onkeypress="validate(event)"><br></td>
+		  </tr>
+ 
+		 </table>
+	   </form>
+	   <input type="button" onclick="myfunction();" value="submit">
+		<input type="submit" onclick="myFunction();" value="reset">
+	<center>
+	   <div style="margin-top: 20px;">
+	   <!-- <p id="display"></p> -->
+	   <table id="display" border="1">
+	   	 <tr>
+	   	 	<th>Name</th>
+	   	 	<th>Email</th>
+	   	 	<th>Mobile Number</th>
+	   	 </tr>
+
+	   </table>   	
+	   </div>
+	 </center>  
+   </center>
+   <script src="scriptusage.js"></script>
+</body>
+</html>

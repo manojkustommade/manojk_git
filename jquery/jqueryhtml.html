@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Html</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="myjquery.js"></script>
+    <style>
+    	table.t1 tr:nth-child(even){
+    		background-color: #D7CAC7;
+    	}
+
+    </style>
+</head>
+<body>
+	 <center>
+        <h3>Signup</h3>
+       <form name="myform">
+	    <table border="1px">
+
+		  <tr>
+		    <th><label for="uname">Username</label></th>
+		    <td><input type="text" id="uname" placeholder="name"></td>
+		  </tr>
+		  <tr>  
+		    <th><label for="email">Email</label></th>
+		    <td><input type="text" id="email" placeholder="Email"></td>
+		  </tr>
+          <tr>
+		    <th><label for="password">Password</label></th>
+		    <td><input type="Password" id="password"  placeholder="Password"></td>
+		  </tr>
+		  <tr>  
+		    <th><label for="confirm_password">Confirm Password</label></th>
+		    <td><input type="Password" id="confirm_password" placeholder="Confirm Password"></td>
+		  </tr>
+		  <tr>  
+	        <th><label for="MobileNo">Mobile Number</label></th>
+		    <td><input type="text" id="MobileNo" placeholder="Phone Number" onkeypress="validate(event)"></td>
+		  </tr>
+ 		   		 
+		 </table>
+		  <input type="text" id="temp" hidden="true" value="-1">
+
+		 <!-- <input type="button" id="submitbtn" value="submit"> 
+		 <input type="submit" id="resetbtn" value="reset">-->
+		 
+	   </form>
+	   <button type="submit" id="submitbtn">submit</button>
+	   <center>
+	   <div style="margin-top: 20px;">
+	   <!-- <p id="display"></p> -->
+	   <table id="display" border="1" class="t1">
+	   	 <tr>
+	   	 	<th>Name</th>
+	   	 	<th>Email</th>
+	   	 	
+	   	 	<th>Mobile Number</th>
+	   	 
+	   	 </tr>
+
+	   </table>   	
+	   </div>
+	 </center>  
+	<center>
+
+</body>
+</html>
