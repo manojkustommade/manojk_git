@@ -1,0 +1,12 @@
+{% extends 'header.html' %}
+{% load static %}
+{%block title %}Download {% endblock %}
+
+{% block content %}
+    <center>
+        <form method="post" enctype="multipart/form-data">
+            {%csrf_token%}
+        <h3 class="title">Download file</h3>
+        <button class="button small">Download</button></form>
+    </center>
+{% endblock %}

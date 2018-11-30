@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="{% static 'css/accounts.css' %}">
+{% endblock %}
+
+{% block body %}
+
+  <h3><a href="{% url 'hello' %}" style="margin-left:45%">Django Board</a></h3>
+  <div class="row" style="background-color:#B2C6D0;width:500px">
+      <center><h3 class="title">Signup</h3>
+    <center class="row" style="width:300px">
+      <form method="post" novalidate>
+        {% csrf_token %}
+        {% include 'includes/form.html' %}
+        <button type="submit" class="button small round success">Create an account</button>
+      </form></center>
+      <div class="card-footer text-muted">
+            Already have an account? <a href="{% url 'login' %}">Log in</a>
+       </div>
+     </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}{{ topic.subject }}{% endblock %}
+
+{% block breadcrumbs %}
+    <li><a href="{% url 'hello' %}">Boards</a></li>
+    <li><a href="{% url 'board_topics' topic.board.pk %}">{{ topic.board.name }}</a></li>
+    <li class="active">{{ topic.subject }}</li>
+{% endblock %}
+
+{% block content %}
+    <div>
+    <a href="#" class="button small info" role="button">Reply</a>
+  </div>
+
+  {% for post in topic.posts.all %}
+
+        <div class="row" style="border:1px solid">
+            <div class="medium-2 columns">
+                <img src="{% static 'img/avatar.svg' %}" alt="{{ post.created_by.username }}" style>
+                <br><p style="font-size:15px; margin-top:5">Posts: {{ post.created_by.posts.count }}</p>
+            </div>
+            <div class="medium-10 columns">
+                <div class="row">
+                    <div class="large-6 columns">
+                        <strong class="current">{{ post.created_by.username }}</strong>
+                    </div>
+                    <div class="large-6 text-center right">
+                         <small class="current">{{ post.created_at }}</small>
+                    </div>
+                </div>
+                {{ post.message }}
+                {% if post.created_by == user %}
+                     <div>
+                         <a href="#" class="button small radius" role="button">Edit</a>
+                     </div>
+                {% endif %}
+            </div>
+        </div>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'header.html' %}
+{% load static %}
+{%block title %}searched content {% endblock %}
+
+{% block content %}
+
+   <center> <div class="row">searched deatils
+    </div>
+    <table class="table" style="width: 50%;height: 100%">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>MobileNumber</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for data in allemployees %}
+
+        <tr>
+            <td>{{ data.username }}</a></td>
+          <td>{{ data.email }}</td>
+          <td>{{data.mobilenumber}}</td>
+        </tr>
+
+      {% endfor %}
+    </tbody>
+  </table></center>
+{% endblock %}

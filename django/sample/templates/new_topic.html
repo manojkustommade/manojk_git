@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load widget_tweaks %}
+
+{% block title %}Start a New Topic{% endblock %}
+
+{% block breadcrumbs %}
+  <li><a href="{% url 'hello' %}">Boards</a></li>
+  <li><a href="{% url 'board_topics' boards.pk %}">{{ boards.name }}</a></li>
+  <li class="active">New topic</li>
+{% endblock %}
+
+{% block content %}
+	<form method="post" novalidate>
+		{% csrf_token %}
+	  	
+  		{% include 'includes/form.html'%}
+  		<button type="submit" class="button small success" style="border-radius: 10px;">Post</button>
+	</form>
+{% endblock %}
