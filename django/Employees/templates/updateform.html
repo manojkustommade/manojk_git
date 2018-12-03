@@ -1,0 +1,35 @@
+{% extends 'header.html' %}
+{% load static %}
+{%block title %}addemploye {% endblock %}
+{% block content %}
+    <div class="row" style="background-color:#B2C6D0;width:500px">
+      <center><h3 class="title">Update Employee Details</h3>
+          <div class="row" style="width:300px">
+              <form data-abide class="content contentsize" name="RegForm" method="POST" id="myform">
+
+					  <div class="name-field ">
+
+					    <input class="inputsize" type="text" placeholder="Name" id="username" name="Name" value="{{updateitems.username}}">
+
+						<p id="err1"></p>
+					  </div>
+					  <div class="email-field">
+
+					    <input class="inputsize" type="email" placeholder="Email" id="emailId" name="Email" value="{{updateitems.email}}" readonly="readonly">
+						<p id="err2"></p>
+
+					  </div>
+					  <div class="password-field">
+
+					    <input class="inputsize" type="text" placeholder="Mobile Number" id="mobilenum" name="Telephone" value="{{updateitems.mobilenumber}}">
+
+						<p id="err3"></p>
+					  </div>
+
+			    </form>
+			  <input type="submit" value="send" name="Submit" onclick="updatedata()">
+			  <p id="err4"></p>
+            </div>
+       </center>
+  </div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% load static %} <!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="icon" href="{% static 'img/employeeportal.png' %}" />
+        <title>{% block title %}Employee Portal{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/foundation.min.css' %}">
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/formvalid.js' %}"></script>
+        <script src="{% static 'js/vendor/modernizr.js' %}"></script>
+    </head>
+
+    <body>
+        {% block body%}
+        <center><h4>Employee Management Portal</h4></center>
+        <div class="row">
+            <ul class="inline-list" style="margin-left:10%;">
+                <li ><a href="{% url 'welcome' %}" class="active">Welcome</a></li>
+                <li><a href="{% url 'addEmp' %}">Add Employee</a></li>
+                <li><a href="{%url 'viewEmployee' %}">View Employee</a></li>
+                <li><a href="{% url 'searchform' %}">Search Employee data</a></li>
+                <li><a href="{%url 'downloadform' %}">Download</a></li>
+                <li><a href="{% url 'uploadform' %}">Upload</a></li>
+            </ul>
+
+        </div>
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+
+         <script src="{% static 'js/vendor/jquery.js' %}"></script>
+        <script src="{% static 'js/foundation.min.js' %}"></script>
+
+
+    <script type="text/javascript">
+	    $(document).foundation({
+
+	    });
+
+	</script>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+
+	    });
+
+	</script>
+
+    </body>
+
+</html>
